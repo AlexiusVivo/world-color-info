@@ -18,7 +18,7 @@ const getCoronaInfoController = async ({ db, req, res }) => {
 
         res.json({
             name: category,
-            values: categoryInfo,
+            data: categoryInfo,
         });
     } catch (e) {
         console.error(e.message);

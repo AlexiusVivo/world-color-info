@@ -1,7 +1,7 @@
 const express = require('express');
 const { Db } = require('./db/db');
 const { config } = require('./config/config');
-const { startSchedulerService } = require('./services/scheduler.service');
+const { startSchedulerService, getCoronaInfoService } = require('./services/scheduler.service');
 const { createRoutes } = require('./routes/routes');
 
 const composeServer = () => {
@@ -11,7 +11,7 @@ const composeServer = () => {
     createRoutes(app, db);
 
     startSchedulerService(db);
-
+    getCoronaInfoService(db)
     return app;
 };
 

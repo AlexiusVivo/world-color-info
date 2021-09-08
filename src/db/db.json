@@ -1,68 +1,42 @@
 {
 	"coronaInfo": {
 		"totalCases": {
-			"northAmerica": 40455580,
-			"europe": 47676118,
-			"asia": 55101696,
-			"southAmerica": 32213263,
-			"africa": 5366889,
-			"oceania": 72889
+			"values": {
+				"northAmerica": 49335345,
+				"europe": 56210651,
+				"asia": 71742600,
+				"southAmerica": 37120872,
+				"africa": 8019051,
+				"oceania": 175419
+			},
+			"colors": {
+				"northAmerica": "#ff9800",
+				"europe": "#ff6900",
+				"asia": "#ff0000",
+				"southAmerica": "#ffc800",
+				"africa": "#55fc21",
+				"oceania": "#00ff32",
+				"antarctida": "#00ff32"
+			}
 		},
 		"newCases": {
-			"northAmerica": 7107,
-			"europe": 26854,
-			"asia": 91058,
-			"southAmerica": 2430,
-			"africa": 3162,
-			"oceania": 233
-		},
-		"totalDeath": {
-			"northAmerica": 915007,
-			"europe": 1097356,
-			"asia": 778941,
-			"southAmerica": 985842,
-			"africa": 140103,
-			"oceania": 1273
-		},
-		"newDeath": {
-			"northAmerica": 270,
-			"europe": 818,
-			"asia": 1374,
-			"southAmerica": 85,
-			"africa": 63,
-			"oceania": 1
-		},
-		"totalRecovered": {
-			"northAmerica": 33887222,
-			"europe": 45190001,
-			"asia": 52466825,
-			"southAmerica": 29182503,
-			"africa": 4716758,
-			"oceania": 68491
-		},
-		"newRecovered": {
-			"northAmerica": 3027,
-			"europe": 27018,
-			"asia": 70818,
-			"southAmerica": 2036,
-			"africa": 3870,
-			"oceania": 29
-		},
-		"activeCases": {
-			"northAmerica": 5653351,
-			"europe": 1388761,
-			"asia": 1855930,
-			"southAmerica": 2044918,
-			"africa": 510028,
-			"oceania": 3125
-		},
-		"criticalCases": {
-			"northAmerica": 10972,
-			"europe": 7766,
-			"asia": 26339,
-			"southAmerica": 31279,
-			"africa": 4588,
-			"oceania": 10
+			"values": {
+				"northAmerica": 101915,
+				"europe": 125520,
+				"asia": 214008,
+				"southAmerica": 20234,
+				"africa": 17616,
+				"oceania": 1761
+			},
+			"colors": {
+				"northAmerica": "#ffd300",
+				"europe": "#ffb800",
+				"asia": "#ff0000",
+				"southAmerica": "#43fd25",
+				"africa": "#3afd27",
+				"oceania": "#00ff32",
+				"antarctida": "#00ff32"
+			}
 		}
 	}
 }

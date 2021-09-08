@@ -1,6 +1,6 @@
 const scheduler = require('node-schedule');
 const { getCoronaInfo } = require('../api/getCoronaInfo');
-const { parseCoronaInfoData } = require('../utils/utils');
+const { parseCoronaInfoData, getColorValues } = require('../utils/utils');
 const { SECTIONS } = require('../variables/variables');
 
 const repeatPattern = '0 0 * * *';
@@ -10,8 +10,10 @@ const getCoronaInfoService = async (database, fireDate = new Date().toString()) 
     const htmlPage = await getCoronaInfo();
 
     const infoByParams = parseCoronaInfoData(htmlPage);
-
-    database.updateSection(SECTIONS.CORONA_INFO, infoByParams);
+    const infoWithColorsByParams = getColorValues(infoByParams)
+    // console.log('INFO BY PARAMS')
+    // console.log(infoByParams)
+    database.updateSection(SECTIONS.CORONA_INFO, infoWithColorsByParams);
 
     console.log(`Info scrapper service finished on ${new Date().toString()}`);
 };
